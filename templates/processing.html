@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Обработка</title>
+    <style>
+        .status {
+            margin: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Статус обработки</h1>
+
+    <div class="status">
+        STEP → TTL: {{ step_ttl }}
+    </div>
+
+    <div class="status">
+        QIF → TTL: {{ qif_ttl }}
+    </div>
+
+    <div class="status">
+        Fuseki: {{ fuseki_status }}
+    </div>
+
+    {% if "✅" in fuseki_status %}
+    <a href="{{ url_for('query') }}">Перейти к запросам</a>
+    {% endif %}
+</body>
+</html>

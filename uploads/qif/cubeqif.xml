@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QIFLibrary
+  xmlns="http://www.dmsc.org/QIF/QIF_2-0"
+  xmlns:cmn="http://www.dmsc.org/QIF/QIF_Common_2-0"
+  xmlns:mod="http://www.dmsc.org/QIF/QIF_Model_2-0"
+  xmlns:res="http://www.dmsc.org/QIF/QIF_Resources_2-0"
+  xmlns:plan="http://www.dmsc.org/QIF/QIF_Plan_2-0"
+  xmlns:resu="http://www.dmsc.org/QIF/QIF_Result_2-0"
+  xmlns:stat="http://www.dmsc.org/QIF/QIF_Statistics_2-0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://www.dmsc.org/QIF/QIF_2-0            QIF_2-0.xsd
+    http://www.dmsc.org/QIF/QIF_Common_2-0     QIF_Common_2-0.xsd
+    http://www.dmsc.org/QIF/QIF_Model_2-0      QIF_Model_2-0.xsd
+    http://www.dmsc.org/QIF/QIF_Resources_2-0  QIF_Resources_2-0.xsd
+    http://www.dmsc.org/QIF/QIF_Plan_2-0       QIF_Plan_2-0.xsd
+    http://www.dmsc.org/QIF/QIF_Result_2-0     QIF_Result_2-0.xsd
+    http://www.dmsc.org/QIF/QIF_Statistics_2-0  QIF_Statistics_2-0.xsd">
+
+  <!-- 0. Общая библиотека справочников -->
+  <cmn:Units>
+    <cmn:Unit id="u_mm">
+      <cmn:Name>Millimeter</cmn:Name>
+      <cmn:UnitType>LENGTH</cmn:UnitType>
+      <cmn:ConversionToSI>0.001</cmn:ConversionToSI>
+    </cmn:Unit>
+    <cmn:Unit id="u_deg">
+      <cmn:Name>Degree</cmn:Name>
+      <cmn:UnitType>PLANE_ANGLE</cmn:UnitType>
+      <cmn:ConversionToSI>0.0174532925</cmn:ConversionToSI>
+    </cmn:Unit>
+  </cmn:Units>
+
+  <cmn:Materials>
+    <!-- При необходимости сюда можно добавить материалы -->
+  </cmn:Materials>
+
+  <cmn:ToleranceDefinitions>
+    <!-- При необходимости здесь описываются допуски GD&T -->
+  </cmn:ToleranceDefinitions>
+
+
+  <!-- 1. Экземпляр модели QIF -->
+  <QIFModel>
+
+    <!-- 1.1 FileHeader -->
+    <cmn:FileHeader>
+      <cmn:QIFVersion>2.0</cmn:QIFVersion>
+      <cmn:FileGUID>550e8400-e29b-41d4-a716-446655440000</cmn:FileGUID>
+      <cmn:CreationDateTime>2012-06-29T14:25:09+08:00</cmn:CreationDateTime>
+      <cmn:Author>---</cmn:Author>
+      <cmn:Organization>---</cmn:Organization>
+      <cmn:ProjectName>CubeExampleProject</cmn:ProjectName>
+      <cmn:CustomerName>ExampleCustomer</cmn:CustomerName>
+      <cmn:AuthoringSoftware>ST-DEVELOPER v14</cmn:AuthoringSoftware>
+    </cmn:FileHeader>
+
+    <!-- 1.2 Model -->
+    <mod:Model>
+      <mod:ModelIdentity>
+        <mod:Name>cube.stp</mod:Name>
+        <mod:Description>3D cube model converted from STEP</mod:Description>
+      </mod:ModelIdentity>
+
+      <mod:CADModels>
+        <mod:CADModel>
+          <mod:CADModelID>cad1</mod:CADModelID>
+          <mod:Format>STEP</mod:Format>
+          <mod:Location>cube.stp</mod:Location>
+        </mod:CADModel>
+      </mod:CADModels>
+
+      <mod:BRepModels>
+        <mod:BRepModel>
+          <mod:BRepModelID>brep1</mod:BRepModelID>
+          <mod:CADModelReference>cad1</mod:CADModelReference>
+          <mod:UnitsReference>u_mm</mod:UnitsReference>
+          <mod:CoordinateSystem>
+            <mod:SystemName>DefaultCS</mod:SystemName>
+          </mod:CoordinateSystem>
+        </mod:BRepModel>
+      </mod:BRepModels>
+    </mod:Model>
+
+
+    <!-- 2. Resources -->
+    <res:Resources>
+      <res:CADResource>
+        <res:ResourceID>cad1</res:ResourceID>
+        <res:Format>STEP</res:Format>
+        <res:Location>cube.stp</res:Location>
+      </res:CADResource>
+      <res:MeasuringDeviceResource>
+        <res:ResourceID>dev1</res:ResourceID>
+        <res:Name>Mitutoyo Caliper</res:Name>
+        <res:Manufacturer>Mitutoyo</res:Manufacturer>
+        <res:Model>CD-6"</res:Model>
+        <res:SerialNumber>123456</res:SerialNumber>
+      </res:MeasuringDeviceResource>
+    </res:Resources>
+
+
+    <!-- 3. Определения характеристик (GD&T) -->
+    <res:CharacteristicDefinitions>
+      <!-- Например:
+      <res:CharacteristicDefinition>
+        <res:CharacteristicDefinitionID>char1</res:CharacteristicDefinitionID>
+        <res:Name>Length</res:Name>
+        <res:Type>Length</res:Type>
+      </res:CharacteristicDefinition>
+      -->
+    </res:CharacteristicDefinitions>
+
+    <!-- 4. Measurement Resources (оснастка, калибры) -->
+    <plan:MeasurementResources>
+      <!-- Например:
+      <plan:MeasurementResource>
+        <plan:MeasurementResourceID>cal1</plan:MeasurementResourceID>
+        <plan:Name>Master Gauge</plan:Name>
+      </plan:MeasurementResource>
+      -->
+    </plan:MeasurementResources>
+
+    <!-- 5. Measurement Plans -->
+    <plan:MeasurementPlanList>
+      <plan:MeasurementPlan>
+        <plan:MeasurementPlanID>mp1</plan:MeasurementPlanID>
+        <plan:Name>Basic Inspection Plan</plan:Name>
+        <plan:FeatureList>
+          <!-- Здесь определяются контролируемые геометрические элементы -->
+        </plan:FeatureList>
+      </plan:MeasurementPlan>
+    </plan:MeasurementPlanList>
+
+    <!-- 6. Measurement Results -->
+    <resu:ResultsList>
+      <!-- Например:
+      <resu:CharacteristicResult>
+        <resu:CharacteristicResultID>cr1</resu:CharacteristicResultID>
+        <resu:CharacteristicDefinitionReference>char1</resu:CharacteristicDefinitionReference>
+        <resu:NominalValue>100.0</resu:NominalValue>
+        <resu:ActualValue>99.8</resu:ActualValue>
+      </resu:CharacteristicResult>
+      -->
+    </resu:ResultsList>
+
+    <!-- 7. Statistics -->
+    <stat:StatisticsList>
+      <!-- Например:
+      <stat:FeatureStatistic>
+        <stat:FeatureStatisticID>fs1</stat:FeatureStatisticID>
+        <stat:Name>Length Variation</stat:Name>
+      </stat:FeatureStatistic>
+      -->
+    </stat:StatisticsList>
+
+  </QIFModel>
+</QIFLibrary>

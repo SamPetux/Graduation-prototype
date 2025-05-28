@@ -1,0 +1,1171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stepAp242Xml xmlns="http://www.example.org/ap242"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://standards.iso.org/iso/ts/10303/-4442/ed-3/tech/xml-schema/domain_model http://standards.iso.org/iso/ts/10303/-4442/ed-3/tech/xml-schema/domain_model/DomainModel.xsd">
+                 
+    <Header>		
+	    implementationLevel="2;1"
+        name="cube.stp"
+        timeStamp="2012-06-29T14:25:09+08:00"
+        preprocessorVersion="ST-DEVELOPER v14"
+        originatingSystem="SIEMENS PLM Software NX 8.0"
+        schemaVersion="AUTOMOTIVE_DESIGN { 1 0 10303 214 3 1 1 1 }">
+	
+      <fileDescription>
+        <description/>
+      </fileDescription>
+      <fileName>
+        <author/>
+        <organization/>
+        <authorisation/>
+      </fileName>
+    </Header>	
+
+    <domainModel>
+      <data>
+        <!-- #10 -->
+        <shapeRepresentationRelationship xml:id="10"
+             name="None"
+             description="relationship between cube-None and cube-None">
+          <relatingShape ref="#22"/>
+          <relatedShape ref="#11"/>
+        </shapeRepresentationRelationship>
+
+        <!-- #11 -->
+        <advancedBrepShapeRepresentation xml:id="11"
+             name="cube-None">
+          <items>
+            <item ref="#32"/>
+          </items>
+          <context ref="#187"/>
+        </advancedBrepShapeRepresentation>
+
+        <!-- #12 -->
+        <shapeDefinitionRepresentation xml:id="12">
+          <definition ref="#13"/>
+          <representation ref="#22"/>
+        </shapeDefinitionRepresentation>
+
+        <!-- #13 -->
+        <productDefinitionShape xml:id="13">
+          <name/>
+          <description/>
+          <ofProductDefinition ref="#14"/>
+        </productDefinitionShape>
+
+        <!-- #14 -->
+        <productDefinition xml:id="14">
+          <name> </name>
+          <description> </description>
+          <formation ref="#16"/>
+          <context ref="#15"/>
+        </productDefinition>
+
+        <!-- #15 -->
+        <productDefinitionContext xml:id="15"
+             name="part definition"
+             type="design">
+          <applicationContext ref="#21"/>
+        </productDefinitionContext>
+
+        <!-- #16 -->
+        <productDefinitionFormationWithSpecifiedSource xml:id="16">
+          <name> </name>
+          <description> </description>
+          <ofSource ref="#18"/>
+          <creationMethod>NOT_KNOWN</creationMethod>
+        </productDefinitionFormationWithSpecifiedSource>
+
+        <!-- #17 -->
+        <productRelatedProductCategory xml:id="17"
+             name="part"
+             description="">
+          <products>
+            <product ref="#18"/>
+          </products>
+        </productRelatedProductCategory>
+
+        <!-- #18 -->
+        <product xml:id="18">
+          <name>cube</name>
+          <description>cube</description>
+          <identifier> </identifier>
+          <contexts>
+            <context ref="#19"/>
+          </contexts>
+        </product>
+
+        <!-- #19 -->
+        <productContext xml:id="19"
+             identifier=" "
+             type="mechanical">
+          <applicationContext ref="#21"/>
+        </productContext>
+
+        <!-- #20 -->
+        <applicationProtocolDefinition xml:id="20"
+             name="international standard"
+             application="automotive_design"
+             release="2010">
+          <applicationContext ref="#21"/>
+        </applicationProtocolDefinition>
+
+        <!-- #21 -->
+        <applicationContext xml:id="21"
+             name="core data for automotive mechanical design processes"/>
+
+        <!-- #22 -->
+        <shapeRepresentation xml:id="22"
+             name="cube-None">
+          <items>
+            <item ref="#126"/>
+          </items>
+          <context ref="#187"/>
+        </shapeRepresentation>
+        <!-- #23 -->
+        <presentationLayerAssignment xml:id="23">
+          <name>1</name>
+          <description>Layer 1</description>
+          <items>
+            <item ref="#32"/>
+          </items>
+        </presentationLayerAssignment>
+
+        <!-- #24 -->
+        <styledItem xml:id="24">
+          <name/>
+          <items>
+            <item ref="#25"/>
+          </items>
+          <itemSubject ref="#32"/>
+        </styledItem>
+
+        <!-- #25 -->
+        <presentationStyleAssignment xml:id="25">
+          <styles>
+            <style ref="#26"/>
+          </styles>
+        </presentationStyleAssignment>
+
+        <!-- #26 -->
+        <surfaceStyleUsage xml:id="26"
+             use="BOTH">
+          <styleUse ref="#27"/>
+        </surfaceStyleUsage>
+
+        <!-- #27 -->
+        <surfaceSideStyle xml:id="27">
+          <name/>
+          <sides>
+            <sideStyleElement ref="#28"/>
+          </sides>
+        </surfaceSideStyle>
+
+        <!-- #28 -->
+        <surfaceStyleFillArea xml:id="28">
+          <fillAreaStyle ref="#29"/>
+        </surfaceStyleFillArea>
+
+        <!-- #29 -->
+        <fillAreaStyle xml:id="29">
+          <name/>
+          <elements>
+            <fillAreaElement ref="#30"/>
+          </elements>
+        </fillAreaStyle>
+
+        <!-- #30 -->
+        <fillAreaStyleColour xml:id="30">
+          <name/>
+          <colour ref="#31"/>
+        </fillAreaStyleColour>
+
+        <!-- #31 -->
+        <colourRgb xml:id="31">
+          <name>Orange</name>
+          <red>1.0</red>
+          <green>0.6</green>
+          <blue>0.0</blue>
+        </colourRgb>
+
+        <!-- #32 -->
+        <manifoldSolidBrep xml:id="32">
+          <name/>
+          <shell ref="#33"/>
+        </manifoldSolidBrep>
+        <!-- #33 -->
+        <closedShell xml:id="33">
+          <name/>
+          <faces>
+            <face ref="#34"/>
+            <face ref="#35"/>
+            <face ref="#36"/>
+            <face ref="#37"/>
+            <face ref="#38"/>
+            <face ref="#39"/>
+          </faces>
+        </closedShell>
+
+        <!-- #34 -->
+        <advancedFace xml:id="34">
+          <name/>
+          <bounds>
+            <faceBound ref="#46"/>
+          </bounds>
+          <faceSurface ref="#40"/>
+          <sameSense>false</sameSense>
+        </advancedFace>
+
+        <!-- #35 -->
+        <advancedFace xml:id="35">
+          <name/>
+          <bounds>
+            <faceBound ref="#47"/>
+          </bounds>
+          <faceSurface ref="#41"/>
+          <sameSense>false</sameSense>
+        </advancedFace>
+
+        <!-- #36 -->
+        <advancedFace xml:id="36">
+          <name/>
+          <bounds>
+            <faceBound ref="#48"/>
+          </bounds>
+          <faceSurface ref="#42"/>
+          <sameSense>false</sameSense>
+        </advancedFace>
+
+        <!-- #37 -->
+        <advancedFace xml:id="37">
+          <name/>
+          <bounds>
+            <faceBound ref="#49"/>
+          </bounds>
+          <faceSurface ref="#43"/>
+          <sameSense>false</sameSense>
+        </advancedFace>
+
+        <!-- #38 -->
+        <advancedFace xml:id="38">
+          <name/>
+          <bounds>
+            <faceBound ref="#50"/>
+          </bounds>
+          <faceSurface ref="#44"/>
+          <sameSense>true</sameSense>
+        </advancedFace>
+
+        <!-- #39 -->
+        <advancedFace xml:id="39">
+          <name/>
+          <bounds>
+            <faceBound ref="#51"/>
+          </bounds>
+          <faceSurface ref="#45"/>
+          <sameSense>false</sameSense>
+        </advancedFace>
+        <!-- #40 -->
+        <plane xml:id="40">
+          <name/>
+          <position ref="#127"/>
+        </plane>
+
+        <!-- #41 -->
+        <plane xml:id="41">
+          <name/>
+          <position ref="#128"/>
+        </plane>
+
+        <!-- #42 -->
+        <plane xml:id="42">
+          <name/>
+          <position ref="#129"/>
+        </plane>
+
+        <!-- #43 -->
+        <plane xml:id="43">
+          <name/>
+          <position ref="#130"/>
+        </plane>
+
+        <!-- #44 -->
+        <plane xml:id="44">
+          <name/>
+          <position ref="#131"/>
+        </plane>
+
+        <!-- #45 -->
+        <plane xml:id="45">
+          <name/>
+          <position ref="#132"/>
+        </plane>
+
+        <!-- #46 -->
+        <faceOuterBound xml:id="46"
+             name=""
+             orientation="true">
+          <bound ref="#52"/>
+        </faceOuterBound>
+
+        <!-- #47 -->
+        <faceOuterBound xml:id="47"
+             name=""
+             orientation="true">
+          <bound ref="#53"/>
+        </faceOuterBound>
+
+        <!-- #48 -->
+        <faceOuterBound xml:id="48"
+             name=""
+             orientation="true">
+          <bound ref="#54"/>
+        </faceOuterBound>
+
+        <!-- #49 -->
+        <faceOuterBound xml:id="49"
+             name=""
+             orientation="true">
+          <bound ref="#55"/>
+        </faceOuterBound>
+
+        <!-- #50 -->
+        <faceOuterBound xml:id="50"
+             name=""
+             orientation="true">
+          <bound ref="#56"/>
+        </faceOuterBound>
+
+        <!-- #51 -->
+        <faceOuterBound xml:id="51"
+             name=""
+             orientation="true">
+          <bound ref="#57"/>
+        </faceOuterBound>
+
+        <!-- #52 -->
+        <edgeLoop xml:id="52">
+          <name/>
+          <edges>
+            <orientedEdge ref="#58"/>
+            <orientedEdge ref="#59"/>
+            <orientedEdge ref="#60"/>
+            <orientedEdge ref="#61"/>
+          </edges>
+        </edgeLoop>
+
+        <!-- #53 -->
+        <edgeLoop xml:id="53">
+          <name/>
+          <edges>
+            <orientedEdge ref="#62"/>
+            <orientedEdge ref="#63"/>
+            <orientedEdge ref="#64"/>
+            <orientedEdge ref="#65"/>
+          </edges>
+        </edgeLoop>
+
+        <!-- #54 -->
+        <edgeLoop xml:id="54">
+          <name/>
+          <edges>
+            <orientedEdge ref="#66"/>
+            <orientedEdge ref="#67"/>
+            <orientedEdge ref="#68"/>
+            <orientedEdge ref="#69"/>
+          </edges>
+        </edgeLoop>
+
+        <!-- #55 -->
+        <edgeLoop xml:id="55">
+          <name/>
+          <edges>
+            <orientedEdge ref="#70"/>
+            <orientedEdge ref="#71"/>
+            <orientedEdge ref="#72"/>
+            <orientedEdge ref="#73"/>
+          </edges>
+        </edgeLoop>
+
+        <!-- #56 -->
+        <edgeLoop xml:id="56">
+          <name/>
+          <edges>
+            <orientedEdge ref="#74"/>
+            <orientedEdge ref="#75"/>
+            <orientedEdge ref="#76"/>
+            <orientedEdge ref="#77"/>
+          </edges>
+        </edgeLoop>
+
+        <!-- #57 -->
+        <edgeLoop xml:id="57">
+          <name/>
+          <edges>
+            <orientedEdge ref="#78"/>
+            <orientedEdge ref="#79"/>
+            <orientedEdge ref="#80"/>
+            <orientedEdge ref="#81"/>
+          </edges>
+        </edgeLoop>
+        <!-- #58 -->
+        <orientedEdge xml:id="58" orientation="true">
+          <edgeElement ref="#90"/>
+        </orientedEdge>
+
+        <!-- #59 -->
+        <orientedEdge xml:id="59" orientation="false">
+          <edgeElement ref="#91"/>
+        </orientedEdge>
+
+        <!-- #60 -->
+        <orientedEdge xml:id="60" orientation="false">
+          <edgeElement ref="#92"/>
+        </orientedEdge>
+
+        <!-- #61 -->
+        <orientedEdge xml:id="61" orientation="true">
+          <edgeElement ref="#93"/>
+        </orientedEdge>
+
+        <!-- #62 -->
+        <orientedEdge xml:id="62" orientation="true">
+          <edgeElement ref="#94"/>
+        </orientedEdge>
+
+        <!-- #63 -->
+        <orientedEdge xml:id="63" orientation="false">
+          <edgeElement ref="#95"/>
+        </orientedEdge>
+
+        <!-- #64 -->
+        <orientedEdge xml:id="64" orientation="false">
+          <edgeElement ref="#96"/>
+        </orientedEdge>
+
+        <!-- #65 -->
+        <orientedEdge xml:id="65" orientation="true">
+          <edgeElement ref="#91"/>
+        </orientedEdge>
+
+        <!-- #66 -->
+        <orientedEdge xml:id="66" orientation="true">
+          <edgeElement ref="#97"/>
+        </orientedEdge>
+
+        <!-- #67 -->
+        <orientedEdge xml:id="67" orientation="false">
+          <edgeElement ref="#98"/>
+        </orientedEdge>
+
+        <!-- #68 -->
+        <orientedEdge xml:id="68" orientation="false">
+          <edgeElement ref="#99"/>
+        </orientedEdge>
+
+        <!-- #69 -->
+        <orientedEdge xml:id="69" orientation="true">
+          <edgeElement ref="#95"/>
+        </orientedEdge>
+
+        <!-- #70 -->
+        <orientedEdge xml:id="70" orientation="true">
+          <edgeElement ref="#100"/>
+        </orientedEdge>
+
+        <!-- #71 -->
+        <orientedEdge xml:id="71" orientation="false">
+          <edgeElement ref="#93"/>
+        </orientedEdge>
+
+        <!-- #72 -->
+        <orientedEdge xml:id="72" orientation="false">
+          <edgeElement ref="#101"/>
+        </orientedEdge>
+
+        <!-- #73 -->
+        <orientedEdge xml:id="73" orientation="false">
+          <edgeElement ref="#98"/>
+        </orientedEdge>
+
+        <!-- #74 -->
+        <orientedEdge xml:id="74" orientation="true">
+          <edgeElement ref="#92"/>
+        </orientedEdge>
+
+        <!-- #75 -->
+        <orientedEdge xml:id="75" orientation="true">
+          <edgeElement ref="#96"/>
+        </orientedEdge>
+
+        <!-- #76 -->
+        <orientedEdge xml:id="76" orientation="true">
+          <edgeElement ref="#99"/>
+        </orientedEdge>
+
+        <!-- #77 -->
+        <orientedEdge xml:id="77" orientation="true">
+          <edgeElement ref="#101"/>
+        </orientedEdge>
+
+        <!-- #78 -->
+        <orientedEdge xml:id="78" orientation="false">
+          <edgeElement ref="#90"/>
+        </orientedEdge>
+
+        <!-- #79 -->
+        <orientedEdge xml:id="79" orientation="false">
+          <edgeElement ref="#100"/>
+        </orientedEdge>
+
+        <!-- #80 -->
+        <orientedEdge xml:id="80" orientation="false">
+          <edgeElement ref="#97"/>
+        </orientedEdge>
+
+        <!-- #81 -->
+        <orientedEdge xml:id="81" orientation="false">
+          <edgeElement ref="#94"/>
+        </orientedEdge>
+
+        <!-- #82 -->
+        <vertexPoint xml:id="82">
+          <name/>
+          <vertexGeometry ref="#161"/>
+        </vertexPoint>
+
+        <!-- #83 -->
+        <vertexPoint xml:id="83">
+          <name/>
+          <vertexGeometry ref="#162"/>
+        </vertexPoint>
+
+        <!-- #84 -->
+        <vertexPoint xml:id="84">
+          <name/>
+          <vertexGeometry ref="#164"/>
+        </vertexPoint>
+
+        <!-- #85 -->
+        <vertexPoint xml:id="85">
+          <name/>
+          <vertexGeometry ref="#166"/>
+        </vertexPoint>
+
+        <!-- #86 -->
+        <vertexPoint xml:id="86">
+          <name/>
+          <vertexGeometry ref="#170"/>
+        </vertexPoint>
+
+        <!-- #87 -->
+        <vertexPoint xml:id="87">
+          <name/>
+          <vertexGeometry ref="#172"/>
+        </vertexPoint>
+
+        <!-- #88 -->
+        <vertexPoint xml:id="88">
+          <name/>
+          <vertexGeometry ref="#176"/>
+        </vertexPoint>
+
+        <!-- #89 -->
+        <vertexPoint xml:id="89">
+          <name/>
+          <vertexGeometry ref="#178"/>
+        </vertexPoint>
+        <!-- #90 -->
+        <edgeCurve xml:id="90">
+          <name/>
+          <edgeStart ref="#82"/>
+          <edgeEnd ref="#83"/>
+          <curveGeometry ref="#102"/>
+          <sameSense>true</sameSense>
+        </edgeCurve>
+
+        <!-- #91 -->
+        <edgeCurve xml:id="91">
+          <name/>
+          <edgeStart ref="#84"/>
+          <edgeEnd ref="#83"/>
+          <curveGeometry ref="#103"/>
+          <sameSense>true</sameSense>
+        </edgeCurve>
+
+        <!-- #92 -->
+        <edgeCurve xml:id="92">
+          <name/>
+          <edgeStart ref="#85"/>
+          <edgeEnd ref="#84"/>
+          <curveGeometry ref="#104"/>
+          <sameSense>true</sameSense>
+        </edgeCurve>
+
+        <!-- #93 -->
+        <edgeCurve xml:id="93">
+          <name/>
+          <edgeStart ref="#85"/>
+          <edgeEnd ref="#82"/>
+          <curveGeometry ref="#105"/>
+          <sameSense>true</sameSense>
+        </edgeCurve>
+
+        <!-- #94 -->
+        <edgeCurve xml:id="94">
+          <name/>
+          <edgeStart ref="#83"/>
+          <edgeEnd ref="#86"/>
+          <curveGeometry ref="#106"/>
+          <sameSense>true</sameSense>
+        </edgeCurve>
+
+        <!-- #95 -->
+        <edgeCurve xml:id="95">
+          <name/>
+          <edgeStart ref="#87"/>
+          <edgeEnd ref="#86"/>
+          <curveGeometry ref="#107"/>
+          <sameSense>true</sameSense>
+        </edgeCurve>
+
+        <!-- #96 -->
+        <edgeCurve xml:id="96">
+          <name/>
+          <edgeStart ref="#84"/>
+          <edgeEnd ref="#87"/>
+          <curveGeometry ref="#108"/>
+          <sameSense>true</sameSense>
+        </edgeCurve>
+
+        <!-- #97 -->
+        <edgeCurve xml:id="97">
+          <name/>
+          <edgeStart ref="#86"/>
+          <edgeEnd ref="#88"/>
+          <curveGeometry ref="#109"/>
+          <sameSense>true</sameSense>
+        </edgeCurve>
+
+        <!-- #98 -->
+        <edgeCurve xml:id="98">
+          <name/>
+          <edgeStart ref="#89"/>
+          <edgeEnd ref="#88"/>
+          <curveGeometry ref="#110"/>
+          <sameSense>true</sameSense>
+        </edgeCurve>
+
+        <!-- #99 -->
+        <edgeCurve xml:id="99">
+          <name/>
+          <edgeStart ref="#87"/>
+          <edgeEnd ref="#89"/>
+          <curveGeometry ref="#111"/>
+          <sameSense>true</sameSense>
+        </edgeCurve>
+
+        <!-- #100 -->
+        <edgeCurve xml:id="100">
+          <name/>
+          <edgeStart ref="#88"/>
+          <edgeEnd ref="#82"/>
+          <curveGeometry ref="#112"/>
+          <sameSense>true</sameSense>
+        </edgeCurve>
+
+        <!-- #101 -->
+        <edgeCurve xml:id="101">
+          <name/>
+          <edgeStart ref="#89"/>
+          <edgeEnd ref="#85"/>
+          <curveGeometry ref="#113"/>
+          <sameSense>true</sameSense>
+        </edgeCurve>
+
+        <!-- #102 -->
+        <line xml:id="102">
+          <name/>
+          <pnt ref="#160"/>
+          <dir ref="#114"/>
+        </line>
+
+        <!-- #103 -->
+        <line xml:id="103">
+          <name/>
+          <pnt ref="#163"/>
+          <dir ref="#115"/>
+        </line>
+
+        <!-- #104 -->
+        <line xml:id="104">
+          <name/>
+          <pnt ref="#165"/>
+          <dir ref="#116"/>
+        </line>
+
+        <!-- #105 -->
+        <line xml:id="105">
+          <name/>
+          <pnt ref="#167"/>
+          <dir ref="#117"/>
+        </line>
+
+        <!-- #106 -->
+        <line xml:id="106">
+          <name/>
+          <pnt ref="#169"/>
+          <dir ref="#118"/>
+        </line>
+
+        <!-- #107 -->
+        <line xml:id="107">
+          <name/>
+          <pnt ref="#171"/>
+          <dir ref="#119"/>
+        </line>
+
+        <!-- #108 -->
+        <line xml:id="108">
+          <name/>
+          <pnt ref="#173"/>
+          <dir ref="#120"/>
+        </line>
+
+        <!-- #109 -->
+        <line xml:id="109">
+          <name/>
+          <pnt ref="#175"/>
+          <dir ref="#121"/>
+        </line>
+
+        <!-- #110 -->
+        <line xml:id="110">
+          <name/>
+          <pnt ref="#177"/>
+          <dir ref="#122"/>
+        </line>
+
+        <!-- #111 -->
+        <line xml:id="111">
+          <name/>
+          <pnt ref="#179"/>
+          <dir ref="#123"/>
+        </line>
+
+        <!-- #112 -->
+        <line xml:id="112">
+          <name/>
+          <pnt ref="#181"/>
+          <dir ref="#124"/>
+        </line>
+
+        <!-- #113 -->
+        <line xml:id="113">
+          <name/>
+          <pnt ref="#182"/>
+          <dir ref="#125"/>
+        </line>
+
+        <!-- #114–#125: VECTOR -->
+        <vector xml:id="114">
+          <name/>
+          <direction ref="#135"/>
+          <magnitude>1.0</magnitude>
+        </vector>
+        <vector xml:id="115">
+          <name/>
+          <direction ref="#136"/>
+          <magnitude>1.0</magnitude>
+        </vector>
+        <vector xml:id="116">
+          <name/>
+          <direction ref="#137"/>
+          <magnitude>1.0</magnitude>
+        </vector>
+        <vector xml:id="117">
+          <name/>
+          <direction ref="#138"/>
+          <magnitude>1.0</magnitude>
+        </vector>
+        <vector xml:id="118">
+          <name/>
+          <direction ref="#141"/>
+          <magnitude>1.0</magnitude>
+        </vector>
+        <vector xml:id="119">
+          <name/>
+          <direction ref="#142"/>
+          <magnitude>1.0</magnitude>
+        </vector>
+        <vector xml:id="120">
+          <name/>
+          <direction ref="#143"/>
+          <magnitude>1.0</magnitude>
+        </vector>
+        <vector xml:id="121">
+          <name/>
+          <direction ref="#146"/>
+          <magnitude>1.0</magnitude>
+        </vector>
+        <vector xml:id="122">
+          <name/>
+          <direction ref="#147"/>
+          <magnitude>1.0</magnitude>
+        </vector>
+        <vector xml:id="123">
+          <name/>
+          <direction ref="#148"/>
+          <magnitude>1.0</magnitude>
+        </vector>
+        <vector xml:id="124">
+          <name/>
+          <direction ref="#151"/>
+          <magnitude>1.0</magnitude>
+        </vector>
+        <vector xml:id="125">
+          <name/>
+          <direction ref="#152"/>
+          <magnitude>1.0</magnitude>
+        </vector>
+        <!-- #126 -->
+        <axis2Placement3d xml:id="126">
+          <name/>
+          <location ref="#159"/>
+          <axis ref="#133"/>
+          <refDirection ref="#134"/>
+        </axis2Placement3d>
+
+        <!-- #127 -->
+        <axis2Placement3d xml:id="127">
+          <name/>
+          <location ref="#168"/>
+          <axis ref="#139"/>
+          <refDirection ref="#140"/>
+        </axis2Placement3d>
+
+        <!-- #128 -->
+        <axis2Placement3d xml:id="128">
+          <name/>
+          <location ref="#174"/>
+          <axis ref="#144"/>
+          <refDirection ref="#145"/>
+        </axis2Placement3d>
+
+        <!-- #129 -->
+        <axis2Placement3d xml:id="129">
+          <name/>
+          <location ref="#180"/>
+          <axis ref="#149"/>
+          <refDirection ref="#150"/>
+        </axis2Placement3d>
+
+        <!-- #130 -->
+        <axis2Placement3d xml:id="130">
+          <name/>
+          <location ref="#183"/>
+          <axis ref="#153"/>
+          <refDirection ref="#154"/>
+        </axis2Placement3d>
+
+        <!-- #131 -->
+        <axis2Placement3d xml:id="131">
+          <name/>
+          <location ref="#184"/>
+          <axis ref="#155"/>
+          <refDirection ref="#156"/>
+        </axis2Placement3d>
+
+        <!-- #132 -->
+        <axis2Placement3d xml:id="132">
+          <name/>
+          <location ref="#185"/>
+          <axis ref="#157"/>
+          <refDirection ref="#158"/>
+        </axis2Placement3d>
+
+        <!-- #133–#158: DIRECTION -->
+        <direction xml:id="133">
+          <name/>
+          <directionRatios>0.0 0.0 1.0</directionRatios>
+        </direction>
+        <direction xml:id="134">
+          <name/>
+          <directionRatios>1.0 0.0 0.0</directionRatios>
+        </direction>
+        <direction xml:id="135">
+          <name/>
+          <directionRatios>0.0 1.0 0.0</directionRatios>
+        </direction>
+        <direction xml:id="136">
+          <name/>
+          <directionRatios>0.0 0.0 -1.0</directionRatios>
+        </direction>
+        <direction xml:id="137">
+          <name/>
+          <directionRatios>0.0 1.0 0.0</directionRatios>
+        </direction>
+        <direction xml:id="138">
+          <name/>
+          <directionRatios>0.0 0.0 -1.0</directionRatios>
+        </direction>
+        <direction xml:id="139">
+          <name/>
+          <directionRatios>-1.0 0.0 0.0</directionRatios>
+        </direction>
+        <direction xml:id="140">
+          <name/>
+          <directionRatios>0.0 0.0 1.0</directionRatios>
+        </direction>
+        <direction xml:id="141">
+          <name/>
+          <directionRatios>-1.0 0.0 0.0</directionRatios>
+        </direction>
+        <direction xml:id="142">
+          <name/>
+          <directionRatios>0.0 0.0 -1.0</directionRatios>
+        </direction>
+        <direction xml:id="143">
+          <name/>
+          <directionRatios>-1.0 0.0 0.0</directionRatios>
+        </direction>
+        <direction xml:id="144">
+          <name/>
+          <directionRatios>0.0 -1.0 0.0</directionRatios>
+        </direction>
+        <direction xml:id="145">
+          <name/>
+          <directionRatios>0.0 0.0 -1.0</directionRatios>
+        </direction>
+        <direction xml:id="146">
+          <name/>
+          <directionRatios>-3.70074341541719E-015 -1.0 0.0</directionRatios>
+        </direction>
+        <direction xml:id="147">
+          <name/>
+          <directionRatios>0.0 0.0 -1.0</directionRatios>
+        </direction>
+        <direction xml:id="148">
+          <name/>
+          <directionRatios>-3.70074341541719E-015 -1.0 0.0</directionRatios>
+        </direction>
+        <direction xml:id="149">
+          <name/>
+          <directionRatios>1.0 -3.70074341541719E-015 0.0</directionRatios>
+        </direction>
+        <direction xml:id="150">
+          <name/>
+          <directionRatios>3.69149155687865E-015 1.0 0.0</directionRatios>
+        </direction>
+        <direction xml:id="151">
+          <name/>
+          <directionRatios>1.0 -1.11022302462515E-015 0.0</directionRatios>
+        </direction>
+        <direction xml:id="152">
+          <name/>
+          <directionRatios>1.0 -1.11022302462515E-015 0.0</directionRatios>
+        </direction>
+        <direction xml:id="153">
+          <name/>
+          <directionRatios>1.11022302462515E-015 1.0 0.0</directionRatios>
+        </direction>
+        <direction xml:id="154">
+          <name/>
+          <directionRatios>-1.0 1.11022302462516E-015 0.0</directionRatios>
+        </direction>
+        <direction xml:id="155">
+          <name/>
+          <directionRatios>0.0 0.0 1.0</directionRatios>
+        </direction>
+        <direction xml:id="156">
+          <name/>
+          <directionRatios>1.0 0.0 0.0</directionRatios>
+        </direction>
+        <direction xml:id="157">
+          <name/>
+          <directionRatios>0.0 0.0 1.0</directionRatios>
+        </direction>
+        <direction xml:id="158">
+          <name/>
+          <directionRatios>1.0 0.0 0.0</directionRatios>
+        </direction>
+
+        <!-- #159–#185: CARTESIAN_POINT -->
+        <cartesianPoint xml:id="159">
+          <name/>
+          <coordinates>0.0 0.0 0.0</coordinates>
+        </cartesianPoint>
+        <cartesianPoint xml:id="160">
+          <name/>
+          <coordinates>140.0 -140.0 0.0</coordinates>
+        </cartesianPoint>
+        <cartesianPoint xml:id="161">
+          <name/>
+          <coordinates>140.0 -140.0 0.0</coordinates>
+        </cartesianPoint>
+        <cartesianPoint xml:id="162">
+          <name/>
+          <coordinates>140.0 160.0 0.0</coordinates>
+        </cartesianPoint>
+        <cartesianPoint xml:id="163">
+          <name/>
+          <coordinates>140.0 160.0 300.0</coordinates>
+        </cartesianPoint>
+        <cartesianPoint xml:id="164">
+          <name/>
+          <coordinates>140.0 160.0 300.0</coordinates>
+        </cartesianPoint>
+        <cartesianPoint xml:id="165">
+          <name/>
+          <coordinates>140.0 -140.0 300.0</coordinates>
+        </cartesianPoint>
+        <cartesianPoint xml:id="166">
+          <name/>
+          <coordinates>140.0 -140.0 300.0</coordinates>
+        </cartesianPoint>
+        <cartesianPoint xml:id="167">
+          <name/>
+          <coordinates>140.0 -140.0 300.0</coordinates>
+        </cartesianPoint>
+        <cartesianPoint xml:id="168">
+          <name/>
+          <coordinates>140.0 -140.0 300.0</coordinates>
+        </cartesianPoint>
+        <cartesianPoint xml:id="169">
+          <name/>
+          <coordinates>140.0 160.0 0.0</coordinates>
+        </cartesianPoint>
+        <cartesianPoint xml:id="170">
+          <name/>
+          <coordinates>-160.0 160.0 0.0</coordinates>
+        </cartesianPoint>
+        <cartesianPoint xml:id="171">
+          <name/>
+          <coordinates>-160.0 160.0 300.0</coordinates>
+        </cartesianPoint>
+        <cartesianPoint xml:id="172">
+          <name/>
+          <coordinates>-160.0 160.0 300.0</coordinates>
+        </cartesianPoint>
+        <cartesianPoint xml:id="173">
+          <name/>
+          <coordinates>140.0 160.0 300.0</coordinates>
+        </cartesianPoint>
+        <cartesianPoint xml:id="174">
+          <name/>
+          <coordinates>140.0 160.0 300.0</coordinates>
+        </cartesianPoint>
+        <cartesianPoint xml:id="175">
+          <name/>
+          <coordinates>-160.0 160.0 0.0</coordinates>
+        </cartesianPoint>
+        <cartesianPoint xml:id="176">
+          <name/>
+          <coordinates>-160.000000000001 -140.0 0.0</coordinates>
+        </cartesianPoint>
+        <cartesianPoint xml:id="177">
+          <name/>
+          <coordinates>-160.000000000001 -140.0 300.0</coordinates>
+        </cartesianPoint>
+        <cartesianPoint xml:id="178">
+          <name/>
+          <coordinates>-160.000000000001 -140.0 300.0</coordinates>
+        </cartesianPoint>
+        <cartesianPoint xml:id="179">
+          <name/>
+          <coordinates>-160.0 160.0 300.0</coordinates>
+        </cartesianPoint>
+        <cartesianPoint xml:id="180">
+          <name/>
+          <coordinates>-160.0 160.0 300.0</coordinates>
+        </cartesianPoint>
+        <cartesianPoint xml:id="181">
+          <name/>
+          <coordinates>-160.000000000001 -140.0 0.0</coordinates>
+        </cartesianPoint>
+        <cartesianPoint xml:id="182">
+          <name/>
+          <coordinates>-160.000000000001 -140.0 300.0</coordinates>
+        </cartesianPoint>
+        <cartesianPoint xml:id="183">
+          <name/>
+          <coordinates>-160.000000000001 -140.0 300.0</coordinates>
+        </cartesianPoint>
+        <cartesianPoint xml:id="184">
+          <name/>
+          <coordinates>0.0 0.0 300.0</coordinates>
+        </cartesianPoint>
+        <cartesianPoint xml:id="185">
+          <name/>
+          <coordinates>0.0 0.0 0.0</coordinates>
+        </cartesianPoint>
+        <!-- #186 -->
+        <mechanicalDesignGeometricPresentationRepresentation xml:id="186">
+          <name/>
+          <items>
+            <item ref="#24"/>
+          </items>
+          <context ref="#187"/>
+        </mechanicalDesignGeometricPresentationRepresentation>
+
+        <!-- #187 -->
+        <representationContext xml:id="187"
+             dimension="3">
+          <globalUncertainty>
+            <uncertaintyMeasureWithUnit xml:id="188">
+              <value>2.0E-005</value>
+              <unit ref="#194"/>
+              <name>DISTANCE_ACCURACY_VALUE</name>
+              <description>Maximum Tolerance applied to model</description>
+            </uncertaintyMeasureWithUnit>
+          </globalUncertainty>
+          <globalUnitAssignedContexts>
+            <globalUnitContext>
+              <namedUnit ref="#189"/>
+            </globalUnitContext>
+            <globalUnitContext>
+              <conversionBasedUnit ref="#190"/>
+            </globalUnitContext>
+          </globalUnitAssignedContexts>
+          <name>cube</name>
+          <type>TOP_LEVEL_ASSEMBLY_PART</type>
+        </representationContext>
+
+        <!-- #189 -->
+        <namedUnit xml:id="189">
+          <prefix/>
+          <unitType>STERADIAN</unitType>
+        </namedUnit>
+
+        <!-- #190 -->
+        <conversionBasedUnit xml:id="190"
+             name="DEGREE">
+          <unit ref="#191"/>
+        </conversionBasedUnit>
+
+        <!-- #191 -->
+        <dimensionalExponents xml:id="191">
+          <exponents>0.0 0.0 0.0 0.0 0.0 0.0 0.0</exponents>
+        </dimensionalExponents>
+
+        <!-- #192 -->
+        <planeAngleMeasureWithUnit xml:id="192">
+          <value>0.0174532925</value>
+          <unit ref="#193"/>
+        </planeAngleMeasureWithUnit>
+
+        <!-- #193 -->
+        <namedUnit xml:id="193">
+          <prefix/>
+          <unitType>RADIAN</unitType>
+        </namedUnit>
+
+        <!-- #194 -->
+        <namedUnit xml:id="194">
+          <prefix>MILLI</prefix>
+          <unitType>METRE</unitType>
+        </namedUnit>
+
+      </data>
+    </domainModel>
+</stepAp242Xml>

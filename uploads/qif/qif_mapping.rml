@@ -1,0 +1,172 @@
+@base <http://example.org/rml/> .
+@prefix rr:  <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql:  <http://semweb.mmlab.be/ns/ql#> .
+@prefix qif: <http://example.org/eng/qif#> .
+
+#############################################################################
+# Logical Source: Units
+#############################################################################
+<#UnitsSource>
+  a rml:LogicalSource ;
+  rml:source "C:/Users/Hp/rml_project/cube(qif).xml" ;
+  rml:referenceFormulation ql:XPath ;
+  rml:iterator "/*[local-name()='QIFLibrary']/*[local-name()='Units']/*[local-name()='Unit']" .
+
+<#UnitsMap>
+  a rr:TriplesMap ;
+  rml:logicalSource <#UnitsSource> ;
+  rr:subjectMap [
+    rr:template "http://example.org/qif/unit/{@id}" ;
+    rr:class qif:Unit ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate qif:name ;
+    rr:objectMap [ rml:reference "*[local-name()='Name']/text()" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate qif:unitType ;
+    rr:objectMap [ rml:reference "*[local-name()='UnitType']/text()" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate qif:conversionToSI ;
+    rr:objectMap [ rml:reference "*[local-name()='ConversionToSI']/text()" ] ;
+  ] .
+
+#############################################################################
+# Logical Source: CAD Models
+#############################################################################
+<#CADModelSource>
+  a rml:LogicalSource ;
+  rml:source "C:/Users/Hp/rml_project/cube(qif).xml" ;
+  rml:referenceFormulation ql:XPath ;
+  rml:iterator "/*[local-name()='QIFLibrary']/*[local-name()='QIFModel']/*[local-name()='CADModels']/*[local-name()='CADModel']" .
+
+<#CADModelMap>
+  a rr:TriplesMap ;
+  rml:logicalSource <#CADModelSource> ;
+  rr:subjectMap [
+    rr:template "http://example.org/qif/cad/{*[local-name()='CADModelID']/text()}" ;
+    rr:class qif:CADModel ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate qif:cadFormat ;
+    rr:objectMap [ rml:reference "*[local-name()='Format']/text()" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate qif:cadLocation ;
+    rr:objectMap [ rml:reference "*[local-name()='Location']/text()" ] ;
+  ] .
+
+#############################################################################
+# Logical Source: BRep Models
+#############################################################################
+<#BRepModelSource>
+  a rml:LogicalSource ;
+  rml:source "C:/Users/Hp/rml_project/cube(qif).xml" ;
+  rml:referenceFormulation ql:XPath ;
+  rml:iterator "/*[local-name()='QIFLibrary']/*[local-name()='QIFModel']/*[local-name()='BRepModels']/*[local-name()='BRepModel']" .
+
+<#BRepModelMap>
+  a rr:TriplesMap ;
+  rml:logicalSource <#BRepModelSource> ;
+  rr:subjectMap [
+    rr:template "http://example.org/qif/brep/{*[local-name()='BRepModelID']/text()}" ;
+    rr:class qif:BRepModel ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate qif:cadModelRef ;
+    rr:objectMap [ rml:reference "*[local-name()='CADModelReference']/text()" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate qif:unitsRef ;
+    rr:objectMap [ rml:reference "*[local-name()='UnitsReference']/text()" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate qif:coordSystem ;
+    rr:objectMap [ rml:reference "*[local-name()='CoordinateSystem']/*[local-name()='SystemName']/text()" ] ;
+  ] .
+
+#############################################################################
+# Logical Source: CAD Resources
+#############################################################################
+<#CADResourceSource>
+  a rml:LogicalSource ;
+  rml:source "C:/Users/Hp/rml_project/cube(qif).xml" ;
+  rml:referenceFormulation ql:XPath ;
+  rml:iterator "/*[local-name()='QIFLibrary']/*[local-name()='Resources']/*[local-name()='CADResource']" .
+
+<#CADResourceMap>
+  a rr:TriplesMap ;
+  rml:logicalSource <#CADResourceSource> ;
+  rr:subjectMap [
+    rr:template "http://example.org/qif/resource/cad/{*[local-name()='ResourceID']/text()}" ;
+    rr:class qif:CADResource ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate qif:resourceFormat ;
+    rr:objectMap [ rml:reference "*[local-name()='Format']/text()" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate qif:resourceLocation ;
+    rr:objectMap [ rml:reference "*[local-name()='Location']/text()" ] ;
+  ] .
+
+#############################################################################
+# Logical Source: Measuring Device Resources
+#############################################################################
+<#DeviceResourceSource>
+  a rml:LogicalSource ;
+  rml:source "C:/Users/Hp/rml_project/cube(qif).xml" ;
+  rml:referenceFormulation ql:XPath ;
+  rml:iterator "/*[local-name()='QIFLibrary']/*[local-name()='Resources']/*[local-name()='MeasuringDeviceResource']" .
+
+<#DeviceResourceMap>
+  a rr:TriplesMap ;
+  rml:logicalSource <#DeviceResourceSource> ;
+  rr:subjectMap [
+    rr:template "http://example.org/qif/resource/device/{*[local-name()='ResourceID']/text()}" ;
+    rr:class qif:MeasuringDeviceResource ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate qif:deviceName ;
+    rr:objectMap [ rml:reference "*[local-name()='Name']/text()" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate qif:manufacturer ;
+    rr:objectMap [ rml:reference "*[local-name()='Manufacturer']/text()" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate qif:model ;
+    rr:objectMap [ rml:reference "*[local-name()='Model']/text()" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate qif:serialNumber ;
+    rr:objectMap [ rml:reference "*[local-name()='SerialNumber']/text()" ] ;
+  ] .
+
+#############################################################################
+# Logical Source: Measurement Plans
+#############################################################################
+<#PlanSource>
+  a rml:LogicalSource ;
+  rml:source "C:/Users/Hp/rml_project/cube(qif).xml" ;
+  rml:referenceFormulation ql:XPath ;
+  rml:iterator "/*[local-name()='QIFLibrary']/*[local-name()='QIFModel']/*[local-name()='MeasurementPlanList']/*[local-name()='MeasurementPlan']" .
+
+<#PlanMap>
+  a rr:TriplesMap ;
+  rml:logicalSource <#PlanSource> ;
+  rr:subjectMap [
+    rr:template "http://example.org/qif/plan/{*[local-name()='MeasurementPlanID']/text()}" ;
+    rr:class qif:MeasurementPlan ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate qif:planName ;
+    rr:objectMap [ rml:reference "*[local-name()='Name']/text()" ] ;
+  ] ;
+  # здесь можно добавить фичи из FeatureList, если они есть
+  rr:predicateObjectMap [
+    rr:predicate qif:hasFeature ;
+    rr:objectMap [ rml:reference "*[local-name()='FeatureList']/*[local-name()='Feature']/@ref" ] ;
+  ] .
