@@ -1,0 +1,10 @@
+<http://example.org/qif/plan/mp1> <http://example.org/eng/qif#planName> "Basic Inspection Plan" .
+<http://example.org/qif/plan/mp1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/eng/qif#MeasurementPlan> .
+<http://example.org/qif/unit/u_deg> <http://example.org/eng/qif#conversionToSI> "0.0174532925" .
+<http://example.org/qif/unit/u_deg> <http://example.org/eng/qif#name> "Degree" .
+<http://example.org/qif/unit/u_deg> <http://example.org/eng/qif#unitType> "PLANE_ANGLE" .
+<http://example.org/qif/unit/u_deg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/eng/qif#Unit> .
+<http://example.org/qif/unit/u_mm> <http://example.org/eng/qif#conversionToSI> "0.001" .
+<http://example.org/qif/unit/u_mm> <http://example.org/eng/qif#name> "Millimeter" .
+<http://example.org/qif/unit/u_mm> <http://example.org/eng/qif#unitType> "LENGTH" .
+<http://example.org/qif/unit/u_mm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/eng/qif#Unit> .
