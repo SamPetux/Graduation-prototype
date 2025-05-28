@@ -1,0 +1,9 @@
+<http://example.org/step/advancedBrepShapeRepresentation/11> <http://example.org/eng#name> "cube-None" .
+<http://example.org/step/advancedBrepShapeRepresentation/11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/eng#AdvancedBrepShapeRepresentation> .
+<http://example.org/step/relationship/10> <http://example.org/eng#description> "relationship between cube-None and cube-None" .
+<http://example.org/step/relationship/10> <http://example.org/eng#name> "None" .
+<http://example.org/step/relationship/10> <http://example.org/eng#relatedShape> "#11" .
+<http://example.org/step/relationship/10> <http://example.org/eng#relatingShape> "#22" .
+<http://example.org/step/relationship/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/eng#ShapeRepresentationRelationship> .
+<http://example.org/step/shapeRepresentation/22> <http://example.org/eng#name> "cube-None" .
+<http://example.org/step/shapeRepresentation/22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/eng#ShapeRepresentation> .
